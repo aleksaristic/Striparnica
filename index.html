@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="store.js" async></script>
+    <title>Striparnica Doboj</title>
+</head>
+<body>
+    <header>
+        <div class="nav-conditions">
+            <ul>
+                <li><a class="primary-link" href="#">Uslovi prodaje</a></li>
+                <li><a class="primary-link" href="#">Kako doci do nas?</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="social-medias">
+            <a href="#"><img src="images/fb.svg"></a>
+            <a href="#"><img src="images/ig.svg"></a>
+            <a href="https://www.olx.ba/profil/LekiDr"><img src="images/olxlogo.png"></a>
+        </div>
+    </header>
+
+    <div class="nav-menu">
+        <div class="search-box">
+            <form>
+                <input type="search" id="search" placeholder="Pretrazite izdanja..." onchange="openPage()">
+                <button type="submit"><img src="images/searchicon.svg"></button>
+            </form>
+        </div>
+
+        <div class="logo">
+            <a href="#"><img src="images/zagorlogo.png"></a>
+        </div>
+
+        <div class="garbage">
+            <div class="phone-number">
+                <img src="images/phone.png">
+                <h3>Telefon</h3>
+                <p>066-523-509</p>
+            </div>
+
+            <div class="kosarica">
+                <a href="#prodavnica"><img src="images/shopping-bag.png"></a>
+                <h3>Korpa</h3>
+                <p class="ukupna-cijena">0.00KM</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-nav-menu">
+        <ul>
+            <a class="secondary-link" href="index.html"><li>Pocetna</li></a>
+            <a class="secondary-link" href="#shop"><li>Prodavnica</li></a>
+            <a class="secondary-link" href="loginRegistration.html"><li>Prijava / Registracija</li></a>
+            <a class="secondary-link" href="#vijesti"><li>Vijesti</li></a>
+            <a href="http://forum.stripovi.com/topic.asp?TOPIC_ID=17999"><li>Forum</li></a>
+        </ul>
+    </div>
+
+    <div class="vijesti-section" id="vijesti">
+        <h1>Vijesti</h1>
+
+        <div class="vijesti-box">
+            <div class="card" id="main-card">
+                <img src="images/striparnica.jpg">
+                <div class="card-info-holder">
+                    <h3>Otvorena nova Striparnica Zagor u Doboju!</h3>
+                    <a href="#">Saznaj vise</a>
+                </div>
+            </div>
+
+            <div class="card" id="first-card">
+                <a href="#"><img src="images/striparnica1.jpg"></a>
+                <div class="card-info-holder">
+                    <h3>Podignut zvanicni sajt striparnice!<br> Narucite sva izdanja kod nas!</h3>
+                    <a href="#">Saznaj vise</a>
+                </div>
+            </div>
+
+            <div class="card" id="second-card">
+                <img src="images/bluberick.jpg">
+                <div class="card-info-holder">
+                    <h3>Extra popusti na<br>Stripomaniji u Carobnoj Knjizi!</h3>
+                    <a href="#">Saznaj vise</a>
+                </div>
+            </div>
+
+            <div class="card" id="third-card">
+                <img src="images/devetadimenzijasalonstripa.jpg">
+                <div class="card-info-holder">
+                    <h3>Nasa striparnica na standu<br>4. salona stripa u Banja Luci!</h3>
+                    <a href="#">Saznaj vise</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="more-info">
+            <a href="#">Sve vijesti</a>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="comic-shop" id="shop">
+        <h1>Prodavnica</h1>
+        <div class="shop-items">
+            <div class="shop-item">
+                <img class="comic-img" src="images/DD-178.jpg">
+                <div class="shop-item-info-holder">
+                    <h2 class="comic-title">Dylan Dog 178</h2>
+                    <p><del>4.20 KM</del></p>
+                    <p class="comic-price">3.50 KM</p>
+                    <button class="buy-btn" type="button">Dodaj u korpu</button>
+                </div>
+                <span>Dylan Dog 178<br>Neka vlada haos!</span>
+            </div>
+
+            <div class="shop-item">
+                <img class="comic-img" src="images/MN-82.jpg">
+                <div class="shop-item-info-holder">
+                    <h2 class="comic-title">Mister No 82</h2>
+                    <p><del>4.20 KM</del></p>
+                    <p class="comic-price">3.50 KM</p>
+                    <button class="buy-btn" type="button">Dodaj u korpu</button>
+                </div>
+                <span>Mister No 82<br>Empate!</span>
+            </div>
+
+            <div class="shop-item">
+                <img class="comic-img" src="images/Dzon-Taner-2.jpg">
+                <div class="shop-item-info-holder">
+                    <h2 class="comic-title">Dzon Taner 2</h2>
+                    <p><del>30 KM</del></p>
+                    <p class="comic-price">25 KM</p>
+                    <button class="buy-btn" type="button">Dodaj u korpu</button>
+                </div>
+                <span>Dzon Taner 2</span>
+            </div>
+
+            <div class="shop-item">
+                <img class="comic-img" src="images/Nik-38.jpg">
+                <div class="shop-item-info-holder">
+                    <h2 class="comic-title">Nik Rajder 38</h2>
+                    <p><del>21 KM</del></p>
+                    <p class="comic-price">19 KM</p>
+                    <button class="buy-btn" type="button">Dodaj u korpu</button>
+                </div>
+                <span>Nik Rajder 38</span>
+            </div>
+
+            <div class="shop-item">
+                <img class="comic-img" src="images/MV-6.jpg">
+                <div class="shop-item-info-holder">
+                    <h2 class="comic-title">Magicni Vetar 6</h2>
+                    <p><del>21 KM</del></p>
+                    <p class="comic-price">19 KM</p>
+                    <button class="buy-btn" type="button">Dodaj u korpu</button>
+                </div>
+                <span>Magicni Vetar 6<br>Velika vizija</span>
+            </div>
+
+            <div class="shop-item">
+                <img class="comic-img" src="images/Betmen.jpg">
+                <div class="shop-item-info-holder">
+                    <h2 class="comic-title">Betmen<br>Zemlja Jedan</h2>
+                    <p><del>30 KM</del></p>
+                    <p class="comic-price">24 KM</p>
+                    <button class="buy-btn" type="button">Dodaj u korpu</button>
+                </div>
+                <span>Betmen<br>Zemlja Jedan</span>
+            </div>
+
+            <div class="shop-item">
+                <img class="comic-img" src="images/BLU-4.jpg">
+                <div class="shop-item-info-holder">
+                    <h2 class="comic-title">Bluberi 4</h2>
+                    <p><del>28 KM</del></p>
+                    <p class="comic-price">25 KM</p>
+                    <button class="buy-btn" type="button">Dodaj u korpu</button>
+                </div>
+                <span>Bluberi 4</span>
+            </div>
+
+            <div class="shop-item">
+                <img class="comic-img" src="images/SENDMEN-1.jpg">
+                <div class="shop-item-info-holder">
+                    <h2 class="comic-title">Sendmen 1</h2>
+                    <p><del>30 KM</del></p>
+                    <p class="comic-price">26 KM</p>
+                    <button class="buy-btn" type="button">Dodaj u korpu</button>
+                </div>
+                <span>Sendmen 1<br>Preludijumi<br>i nokturna</span>
+            </div>
+        </div>
+
+        <div class="more-products">
+            <a href="#">Svi proizvodi</a>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="cart-section" id="prodavnica">
+        <h1>Korpa sa stripovima</h1>
+        <div class="cart-header">
+            <div id="h-item">Proizvod</div>
+            <div id="h-price">Cijena</div>
+            <div id="h-quantity">Kolicina</div>
+        </div>
+
+        <div class="cart-items">
+            
+        </div>
+
+        <div class="cart-total">
+            <h2>Ukupno: <span class="ukupna-cijena">0.00 KM</span></h2>
+        </div>
+
+        <button class="purchase-btn" type="button">Kupi</button>
+    </div>
+
+    <footer>
+        <div class="info-tag">
+            <a href="#">Striparnica Zagor</a>
+            <p>Doboj, Nikole Pasica 18</p>
+            <p>Broj telefona: 066-523-509</p>
+            <p>Email: striparnicazagor@gmail.com</p>
+            <p>Kreator stranice: <a href="#https://www.facebook.com/aleksa.ristic.9">Aleksa Ristic</a></p>
+        </div>
+
+        <div class="scl-medias">
+            <h3>Zapratite nas na socijalnim mrezama</h3>
+            <img src="images/fb.svg">
+            <img src="images/ig.svg">
+            <img src="images/olxlogo.png">
+        </div>
+
+        <div class="copyright">
+            <p>&copy 2021.</p>
+            <p>Sva prava zadrzava vlasnik web stranice.</p>
+        </div>
+    </footer>
+</body>
+</html>

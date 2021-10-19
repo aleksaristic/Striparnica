@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleKontakt.css">
+    <script src="store.js" async></script>
+    <title>Striparnica Doboj - Kontakt</title>
+</head>
+<body>
+    <header>
+        <div class="nav-conditions">
+            <ul>
+                <li><a class="primary-link" href="#">Uslovi prodaje</a></li>
+                <li><a class="primary-link" href="#">Kako doci do nas?</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="social-medias">
+            <a href="#"><img src="images/fb.svg"></a>
+            <a href="#"><img src="images/ig.svg"></a>
+            <a href="https://www.olx.ba/profil/LekiDr"><img src="images/olxlogo.png"></a>
+        </div>
+    </header>
+
+    <div class="nav-menu">
+        <div class="search-box">
+            <form>
+                <input type="text" placeholder="Pretrazite izdanja...">
+                <button type="submit"><img src="images/searchicon.svg"></button>
+            </form>
+        </div>
+
+        <div class="logo">
+            <a href="#"><img src="images/zagorlogo.png"></a>
+        </div>
+
+        <div class="garbage">
+            <div class="phone-number">
+                <img src="images/phone.png">
+                <h3>Telefon</h3>
+                <p>066-523-509</p>
+            </div>
+
+            <div class="kosarica">
+                <a href="korpa.html"><img src="images/shopping-bag.png"></a>
+                <h3>Korpa</h3>
+                <p class="ukupna-cijena">7.00KM</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-nav-menu">
+        <ul>
+            <a class="secondary-link" href="index.html"><li>Pocetna</li></a>
+            <a class="secondary-link" href="index.html#prodavnica"><li>Prodavnica</li></a>
+            <a class="secondary-link" href="loginRegistration.html"><li>Prijava / Registracija</li></a>
+            <a class="secondary-link" href="index.html#vijesti"><li>Vijesti</li></a>
+            <a href="http://forum.stripovi.com/topic.asp?TOPIC_ID=17999"><li>Forum</li></a>
+        </ul>
+    </div>
+    
+    <div class="adress-section">
+        <iframe width="700" height="550" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://www.openstreetmap.org/export/embed.html?bbox=18.079820394123093%2C44.72802947349053%2C18.0936176772957%2C44.732915198780915&amp;layer=mapnik&amp;marker=44.73047238772499%2C18.086719035709393" style="border: 1px solid black"></iframe>
+        <div class="positioning">
+            <h1>Striparnica Zagor</h1>
+            <p class="adress-details"><span>Pronadjite nas na adresi:</span><br>Doboj - Ulica Svetog Save 56 - Kod centralnog parka</p>
+            <p class="contact"><span>Kontaktirajte nas:</span><br> Tel: 066-523-509<br>Email:striparnicazagor@gmail.com</p>
+            <p class="working-time"><span>Radno vrijeme:</span><br>Radnim danima 8-18h<br>Vikendom 8-12h</p>
+        </div>
+    </div>
+
+    <div class="message-section">
+        <h1>Pisite nam</h1>
+        <div class="contact-form">
+            <form action="message.php" method="POST">
+                <label for="name">Ime:</label><br>
+                <input class="name" type="text" name="name" required><br>
+                <label for="subname">Prezime:</label><br>
+                <input class="subname" type="text" name="subname" required><br>
+                <label for="phone-number">Broj telefona:</label><br>
+                <input class="phone-number" type="text" name="phone-number"><br>
+                <label for="message">Napisite poruku:</label><br>
+                <textarea class="message" name="message" rows="5" cols="20">
+                </textarea><br>
+                <input class="submit-btn" type="submit" value="Posalji">
+            </form>
+
+            <img src="images/zagorlogo.png" alt="No picture">
+        </div>
+    </div>
+
+    <footer>
+        <div class="info-tag">
+            <a href="#">Striparnica Zagor</a>
+            <p>Doboj, Nikole Pasica 18</p>
+            <p>Broj telefona: 066-523-509</p>
+            <p>Email: striparnicazagor@gmail.com</p>
+            <p>Kreator stranice: <a href="#https://www.facebook.com/aleksa.ristic.9">Aleksa Ristic</a></p>
+        </div>
+
+        <div class="scl-medias">
+            <h3>Zapratite nas na socijalnim mrezama</h3>
+            <img src="images/fb.svg">
+            <img src="images/ig.svg">
+            <img src="images/olxlogo.png">
+        </div>
+
+        <div class="copyright">
+            <p>&copy 2021.</p>
+            <p>Sva prava zadrzava vlasnik web stranice.</p>
+        </div>
+    </footer>
+</body>
+</html>

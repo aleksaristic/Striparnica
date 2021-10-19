@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleLoginRegistration.css">
+    <script src="store.js" async></script>
+    <title>Striparnica Doboj - Prijava / Registracija</title>
+</head>
+<body>
+    <header>
+        <div class="nav-conditions">
+            <ul>
+                <li><a class="primary-link" href="#">Uslovi prodaje</a></li>
+                <li><a class="primary-link" href="#">Kako doci do nas?</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+        <div class="social-medias">
+            <a href="#"><img src="images/fb.svg"></a>
+            <a href="#"><img src="images/ig.svg"></a>
+            <a href="https://www.olx.ba/profil/LekiDr"><img src="images/olxlogo.png"></a>
+        </div>
+    </header>
+
+    <div class="nav-menu">
+        <div class="search-box">
+            <form>
+                <input type="text" placeholder="Pretrazite izdanja...">
+                <button type="submit"><img src="images/searchicon.svg"></button>
+            </form>
+        </div>
+
+        <div class="logo">
+            <a href="#"><img src="images/zagorlogo.png"></a>
+        </div>
+
+        <div class="garbage">
+            <div class="phone-number">
+                <img src="images/phone.png">
+                <h3>Telefon</h3>
+                <p>066-523-509</p>
+            </div>
+
+            <div class="kosarica">
+                <a href="korpa.html"><img src="images/shopping-bag.png"></a>
+                <h3>Korpa</h3>
+                <p class="ukupna-cijena">7.00KM</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-nav-menu">
+        <ul>
+            <a class="secondary-link" href="index.html"><li>Pocetna</li></a>
+            <a class="secondary-link" href="index.html#prodavnica"><li>Prodavnica</li></a>
+            <a class="secondary-link" href="loginRegistration.html"><li>Prijava / Registracija</li></a>
+            <a class="secondary-link" href="index.html#vijesti"><li>Vijesti</li></a>
+            <a href="http://forum.stripovi.com/topic.asp?TOPIC_ID=17999"><li>Forum</li></a>
+        </ul>
+    </div>
+
+    <div class="page">
+        <div class="content-on-image">
+            <div class="button-box">
+                <div id="color-btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Prijava</button>
+                <button type="button" class="toggle-btn" onclick="register()">Registracija</button>
+            </div>
+
+            <div class="social-media-icons">
+                <a href="https://www.facebook.com/aleksa.ristic.9"><img src="images/fb.svg"></a>
+                <a href="https://www.facebook.com/aleksa.ristic.9"><img src="images/ig.svg"></a>
+                <a href="https://www.facebook.com/aleksa.ristic.9"><img src="images/olxlogo.png"></a>
+            </div>
+
+            <form action="validation.php" method='POST' id="login" class="input-group">
+                <input type="email" class="input-field" name="email" placeholder="Email" required>
+                <input type="password" class="input-field" name="password" placeholder="Lozinka" required>
+                <input type="submit" class="login-submit-btn" value="Login">
+            </form>
+
+            <form action="registration.php" method='POST' id="registration" class="input-group">
+                <input type="email" class="input-field" name="email" placeholder="Email" required>
+                <input type="text" class = "input-field" name="name" placeholder="Ime i prezime" required>
+                <input type="password" class="input-field" name="password" placeholder="Lozinka" required>
+                <input type="submit" class="login-submit-btn" value="Registracija">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <div class="info-tag">
+            <a href="#">Striparnica Zagor</a>
+            <p>Doboj, Nikole Pasica 18</p>
+            <p>Broj telefona: 066-523-509</p>
+            <p>Email: striparnicazagor@gmail.com</p>
+            <p>Kreator stranice: <a href="#https://www.facebook.com/aleksa.ristic.9">Aleksa Ristic</a></p>
+        </div>
+
+        <div class="scl-medias">
+            <h3>Zapratite nas na socijalnim mrezama</h3>
+            <img src="images/fb.svg">
+            <img src="images/ig.svg">
+            <img src="images/olxlogo.png">
+        </div>
+
+        <div class="copyright">
+            <p>&copy 2021.</p>
+            <p>Sva prava zadrzava vlasnik web stranice.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("registration");
+        var z = document.getElementById("color-btn");
+
+        function register(){
+            x.style.left="-400px";
+            y.style.left="50px";
+            z.style.left="110px";
+        }
+
+        function login(){
+            x.style.left="50px";
+            y.style.left="450px";
+            z.style.left="0px";
+        }
+    </script>
+</body>
+</html>
